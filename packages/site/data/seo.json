@@ -1,11 +1,11 @@
 {
   "_": {
-    "title": "Nuxt 3 Starter",
-    "description": "Get a Nuxt 3 site up and running fast 🚀",
+    "title": "nauras jabari",
+    "description": "Collection of musings-come-to-life from Nauras Jabari's brain thingy",
     "ogImage": "/open-graph.jpg"
   },
   "*": {
-    "title": "Nuxt 3 Starter - |title|",
+    "title": "nauras jabari - |title|",
     "description": "|description|"
   }
 }

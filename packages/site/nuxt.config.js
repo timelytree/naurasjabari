@@ -14,8 +14,8 @@ const baseUrls = {
 }
 
 const sitePort = (function () {
-  if (env === 'development') { return 17010 }
-  return env === 'stable' ? 17020 : 17030
+  if (env === 'development') { return 10010 }
+  return env === 'stable' ? 10020 : 10030
 }())
 
 // ////////////////////////////////////////////////////////////////////// Export

@@ -1,6 +1,6 @@
 // ///////////////////////////////////////////////////////////////////// Imports
 // -----------------------------------------------------------------------------
-import Fs from 'fs-extra'
+import Fs from 'fs'
 import Path from 'path'
 import StartCase from 'lodash/startCase'
 import KebabCase from 'lodash/kebabCase'
