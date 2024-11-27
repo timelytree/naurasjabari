@@ -1,0 +1,11 @@
+{
+  "_": {
+    "title": "Nuxt 3 Starter",
+    "description": "Get a Nuxt 3 site up and running fast 🚀",
+    "ogImage": "/open-graph.jpg"
+  },
+  "*": {
+    "title": "Nuxt 3 Starter - |title|",
+    "description": "|description|"
+  }
+}

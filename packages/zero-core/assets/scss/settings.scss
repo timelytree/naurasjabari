@@ -1,0 +1,22 @@
+/**
+ * This file should NOT contain any styling (classes or IDs). It is responsible
+ * for importing global variables, functions, mixins, etc. It should only contain
+ * imports and overriding variables (settings).
+ */
+
+/////////////////////////////////////////////////////////////////////// Settings
+// -----------------------------------------------------------------------------
+/**
+ * Never remove any of the below settings, only ever update their values
+ * project-to-project.
+ */
+
+@forward '@/assets/scss/settings';
+@use '@/assets/scss/settings' as client-settings;
+
+$gridWidth: client-settings.$gridWidth !default;
+$standardGutter: client-settings.$standardGutter !default;
+$baseFontSize: client-settings.$baseFontSize !default;
+$baseLeading: client-settings.$baseLeading !default;
+$baseLetterSpacing: client-settings.$baseLetterSpacing !default;
+$fontAssetPath: client-settings.$fontAssetPath !default;

@@ -1,0 +1,55 @@
+/**
+ * This file should NOT contain any styling (classes or IDs). It should only contain
+ * variables, functions, mixins, etc. If you want to override core utility functions
+ * or mixins, you can do it here by including the entity with the same name.
+ *
+ * Because nuxt layers don't support merging of vite.css.preprocessorOptions.scss.additionalData
+ * values between layers, this file is imported in the zero-core repo package
+ */
+
+@use '@/../zero-core/assets/scss/utilities.scss' as *;
+
+// /////////////////////////////////////////////////////////////////// Variables
+// -----------------------------------------------------------------------------
+// ===================================================================== General
+$windowSpacing: toRem(16);
+$siteHeaderHeight: toRem(50);
+
+// ===================================================================== Colours
+$cararra: #F2F2ED; // 100
+$holly: #021509; // 950 | rgba(2, 21, 9, 1)
+
+// ====================================================================== Themes
+:root {}
+
+// ===================================================================== Styling
+@mixin shadow1 {
+  box-shadow: 1px 0px 1rem 1px rgba(154, 148, 117, 0.7);
+}
+
+@mixin shadow2 {
+  box-shadow: 1px 0px 8px 1px rgba(154, 148, 117, 0.12);
+}
+
+@mixin focusBoxShadow {
+  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@mixin focusBoxShadowSmall {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+@mixin focusBoxShadowLink {
+  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.5);
+  border-radius: 0.125rem;
+}
+
+@mixin selection-dark {
+  // ::-moz-selection { background-color: #{}; }
+  // ::selection { background-color: #{}; }
+}
+
+@mixin selection-light {
+  // ::-moz-selection { background-color: #{}; }
+  // ::selection { background-color: #{}; }
+}

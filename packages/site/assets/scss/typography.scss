@@ -1,0 +1,162 @@
+@use '@/../zero-core/assets/scss/utilities.scss' as *;
+@use 'settings' as *;
+
+// ////////////////////////////////////////////////////////////////// Typography
+// -----------------------------------------------------------------------------
+// =================================================================== Variables
+/**
+ * Variables specifying the font family declaration ($font_Primary) and the
+ * location of the source font files ($fontAssetPath)
+ */
+
+$font_Primary: 'Ysabeau';
+$font_Mono: monospace;
+
+$fontAssetPath_Primary: '#{$fontAssetPath}/ysabeau';
+
+// ==================================================================== Families
+
+/**
+ * Include @font-face declarations and font file imports using $fontAssetPath
+ */
+
+@font-face {
+  font-family: 'Ysabeau';
+  src: url('#{$fontAssetPath_Primary}/variable.ttf') format('truetype-variations');
+  font-weight: 100 900;
+}
+
+// ///////////////////////////////////////////////////////// Basic Styles Mixins
+// -----------------------------------------------------------------------------
+/**
+ * Mixins corresponding to most commonly used html text elements
+ */
+
+@mixin h1 {
+  font-size: toRem(32);
+  line-height: leading(39, 32);
+  font-weight: 400;
+}
+
+@mixin h2 {
+  font-size: toRem(24);
+  line-height: leading(30, 24);
+  font-weight: 400;
+}
+
+@mixin h3 {
+  font-size: toRem(18);
+  line-height: leading(24, 18);
+  font-weight: 400;
+}
+
+@mixin h4 {}
+
+@mixin h5 {}
+
+@mixin h6 {}
+
+@mixin p1 {}
+
+@mixin p2 {}
+
+@mixin navLink {}
+
+@mixin inlineLink {
+  color: blue;
+}
+
+/**
+ * Mixin for text in <code> elements, see utitlies.scss to edit these vars
+ */
+
+@mixin inlineCode {
+  color: white;
+  background-color: black;
+  padding: toRem(4) toRem(8);
+  border-radius: toRem(4);
+  font-family: monospace;
+  font-size: toRem(14);
+  white-space: break-spaces;
+  transition: background-color 500ms, color 500ms;
+}
+
+@mixin blockCode {
+  background-color: black;
+  padding: toRem(10) toRem(16);
+  margin-bottom: 1.25rem;
+  border-radius: 0.625rem;
+  font-size: toRem(13);
+  line-height: leading(21, 14);
+  font-family: monospace;
+  white-space: break-spaces;
+  transition: background-color 500ms, color 500ms;
+}
+
+// ////////////////////////////////////////////////////////////////////// Sizing
+// -----------------------------------------------------------------------------
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font_Primary;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  display: block;
+  text-transform: none;
+}
+
+h1, .h1 {
+  @include h1;
+}
+
+h2, .h2 {
+  @include h2;
+}
+
+h3, .h3 {
+  @include h3;
+}
+
+h4, .h4 {
+  @include h4;
+}
+
+h5, .h5 {
+  @include h5;
+}
+
+h6, .h6 {
+  @include h6;
+}
+
+p,
+.p1,
+div,
+a,
+button {
+  @include p1;
+}
+
+pre {
+  @include blockCode;
+  code {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
+}
+
+code {
+  @include inlineCode;
+}

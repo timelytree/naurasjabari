@@ -1,0 +1,44 @@
+{
+  "name": "@undone-labs/nuxt3-starter",
+  "version": "1.0.0",
+  "description": "Get a Nuxt 3 site up and running fast 🚀",
+  "author": {
+    "name": "Undone Ventures",
+    "email": "hello@undoneventures.com"
+  },
+  "license": "Apache-2.0",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:undone-labs/nuxt3-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/undone-labs/nuxt3-starter/issues"
+  },
+  "homepage": "https://github.com/undone-labs/nuxt3-starter#readme",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "site:dev": "npm run dev -w site",
+    "site:build": "npm run build -w site",
+    "site:start": "npm run start -w site",
+    "site:generate": "npm run generate -w site",
+    "site:serve": "npm run serve -w site",
+    "site:upgrade-nuxt": "npm run upgrade-nuxt -w site",
+    "site:test": "npm run test -w site",
+    "docs:dev": "npm run docs:dev -w docs",
+    "docs:build": "npm run docs:build -w docs",
+    "docs:preview": "npm run docs:preview -w docs",
+    "docs:test": "npm run docs:test -w docs",
+    "zero-core:test": "npm run test -w zero-core"
+  },
+  "workspaces": [
+    "packages/zero-core",
+    "packages/site",
+    "packages/docs"
+  ],
+  "devDependencies": {
+    "chalk": "^5.3.0"
+  }
+}
